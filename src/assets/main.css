@@ -1,0 +1,40 @@
+@import './base.css';
+
+#app {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.container1 {
+  background-color: rgb(30, 30, 30);
+  padding: 4px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+  grid-template-areas: "nav main";
+}
+
+.sidebar {
+    grid-area: nav;
+    width: fit-content;
+}
+
+.main-content{
+  grid-area: main;
+}
+
+.sidebaricon {
+  /* padding: 6px 8px 6px 16px; */
+  padding: 6px 8px 6px 8px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #818181;
+  display: block;
+}
